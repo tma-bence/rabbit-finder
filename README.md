@@ -2,7 +2,7 @@
 # Rabbit finder 🐇
 
 This repository is all about the rabbit-hole problem's solution.
-I'm not sure if it is the original name for the problem, but it will work for now.
+I'm not sure if it's the original name for the problem, but it will work for now.
 
 ## What is the **rabbit-hole** problem? ##
 

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rabbit finder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" defer></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="mt-5" id="title">
+        <h1>Rabbit finder</h1>
+      </div>
+      <form>
+        <div class="mb-3 mt-5">
+          <label for="lower-limit" class="form-label">Lower limit:</label>
+          <input type="number" name="lower-limit" id="lower-limit" placeholder="Default is 1" onchange="setLowerLimit()">
+        </div>
+        <div class="mb-3">
+          <label for="upper-limit" class="form-label">Upper limit:</label>
+          <input type="number" name="upper-limit" id="upper-limit" placeholder="Default is 10" onchange="setUpperLimit()">
+        </div>
+        <div class="mb-3">
+          <label for="always-find">Always find rabbit:</label>
+          <input type="checkbox" name="always-find" id="always-find">
+        </div>
+      </form>
+      <button type="button" class="btn btn-primary" onclick="findRabbit()">Find the rabbit!</button>
+      <button type="button" class="btn btn-outline-secondary" onclick="setDefVal()">Set default values</button>
+    </div>
+  </body>
+</html>
